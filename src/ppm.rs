@@ -1,6 +1,6 @@
 use std::ops::{Index, IndexMut};
 
-use crate::{color::Color, Debug};
+use crate::{vec3::Color, Debug};
 
 pub struct PPM {
     width: u32,

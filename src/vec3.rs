@@ -1,7 +1,5 @@
 use std::ops::{Add, Div, Index, Mul, Neg};
 
-use crate::color::Color;
-
 #[derive(Debug, Clone, Copy)]
 pub struct Vec3 {
     pub e: [f32; 3],
@@ -129,3 +127,6 @@ impl Div<f32> for Vec3 {
         self * (1.0 / val)
     }
 }
+
+pub type Color = Vec3;
+pub type Point3 = Vec3;

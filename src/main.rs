@@ -1,6 +1,5 @@
 #![allow(dead_code)]
-mod color;
-mod point;
+
 mod ppm;
 mod vec3;
 
