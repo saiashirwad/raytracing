@@ -28,6 +28,13 @@ impl PPM {
         self.pixels = pixels;
     }
 
+    pub fn set_pixel(&mut self, x: u32, y: u32, color: Color) {
+        if x >= self.width || y >= self.height {
+            panic!("Invalid pixel coordinates");
+        }
+        self.pixels[(y * self.width + x) as usize] = color;
+    }
+
     pub fn write_to_file(&self, filename: &str) {
         std::fs::write(filename, self.to_string()).unwrap();
     }

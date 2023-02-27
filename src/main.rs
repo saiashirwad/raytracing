@@ -20,7 +20,7 @@ fn main() {
                 0.25,
             )
             .to_color();
-            img[(j * WIDTH + i) as usize] = color;
+            img.set_pixel(i, j, color);
         }
     }
 
